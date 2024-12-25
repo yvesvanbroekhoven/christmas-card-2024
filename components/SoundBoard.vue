@@ -11,7 +11,7 @@ import SoundBoardButton from "~/components/SoundBoardButton.vue";
 
 const ids = [];
 
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 17; i++) {
   ids.push(i);
 }
 
