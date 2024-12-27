@@ -4,14 +4,14 @@
 </template>
 
 <script setup type="ts">
-import { onMounted, ref } from 'vue'
+const { locale, setLocale } = useI18n()
 import { useMediaControls } from '@vueuse/core'
 
 const { id } = defineProps(['id'])
 
 const audio = ref()
 const { playing, currentTime, duration, volume } = useMediaControls(audio, {
-  src: `${id}.m4a`,
+  src: `/${locale.value}/${id}.m4a`,
 })
 </script>
 

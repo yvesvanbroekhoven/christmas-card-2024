@@ -4,7 +4,7 @@
       {{ introTextLine1 }},
       <br>
       <br>
-      ontdek onze boodschap via ons speciaal ontworpen SoundBoard2000™ hieronder 👇
+      {{ $t('intro') }}
     </h1>
   </header>
 </template>
@@ -14,21 +14,3 @@ const route = useRoute()
 
 const introTextLine1 = `${atob(route.query.v)}`
 </script>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.pacifico-regular {
-  font-family: "Pacifico", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-</style>
